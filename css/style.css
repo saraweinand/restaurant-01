@@ -1,0 +1,407 @@
+/* NOTES
+
+font-family: 'Halant', serif;
+Light: font-weight: 300;
+
+font-family: 'Lato', sans-serif;
+Regular: font-weight: 400;
+Bold: font-weight: 700;
+
+*/
+
+
+/*=============== PRIMARY STRUCTURE ===============*/
+
+body {
+ 
+  color: #000;
+  font-family: 'Lato', sans-serif;
+
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+/* === Typography === */
+
+h1 {
+  font-family: 'Lato', sans-serif;
+  font-size: 2em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: 'Lato', sans-serif;
+  font-size: 2em;
+}
+
+h3 {
+  font-family: 'Lato', serif;
+  font-size: 1.25em;
+  font-weight: 300;
+}
+
+h4 {
+  font-family: 'Halant', serif;
+  font-size: .5em;
+  letter-spacing: 1px;
+  margin-top: -2em;
+}
+
+h5 {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5em;
+}
+
+h6 {
+  margin-top: -2em;
+  font-size: 1em;
+  font-family: 'Halant', serif;
+  font-weight: 300;
+}
+
+p{
+  font-family: 'Halant', serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: #818181;
+}
+
+/* === Primary Navigation === */
+
+.topnav {
+  margin: 1em 3em 0 0;
+  width: 100%;
+  text-align: right;
+  position: fixed;
+}
+
+.topnav a {
+  display: inline-block;
+  margin: 0 1em;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+
+/* ============= Sections ============= */
+
+.landing {
+  text-align: center;
+  color: white;
+  margin-top: 7em;
+}
+
+.landing img {
+  width: 20%;
+  margin: 0 auto;
+}
+
+.landing a {
+  text-transform: uppercase;
+  font-weight: 300;
+  border: 1px solid white;
+  padding: .5em 1.25em;
+}
+
+.landing h3 {
+  font-family: 'Halant', serif;
+  margin-bottom: 6em;
+}
+
+/* === About Tenji === */
+
+.chef-container {
+  width: 100%;
+  margin: 2% auto;
+}
+.chef-container img {
+  height: 30em;
+  padding: 2em;
+}
+
+.chefleft {
+  width: 40%;
+  display: inline-block;
+  float: left;
+}
+
+.chefright {
+  width: 50%;
+  display: inline-block;
+  float: right;
+}
+
+/* === Signature Dishes === */
+
+.signature-container {
+  width: 100%;
+  margin: 3% auto -1% auto;
+}
+
+.signature {
+  display: inline-block;
+  margin: 0 auto;
+  width: 32.5%;
+  text-align: left;
+}
+
+.signature img {
+  width: 98%;
+  opacity: .8;
+}
+
+.signature img:hover {
+  width: 98%;
+  opacity: 1;
+}
+
+.signature h4 {
+  margin: .25em 0 0 0;
+  font-weight: 400;
+}
+
+.signature h5 {
+  margin-top: .25em;
+  font-weight: 100;
+}
+
+
+
+/* === Menu === */
+
+.menu-container {
+  width: 100%;
+  margin: 15% auto;
+}
+
+.section-title {
+  color: white;
+  text-align: center;
+  font-size: 3em;
+}
+
+.prices {
+  text-align: center;
+}
+.prices li{
+  list-style: none;
+  display: inline;
+  margin: 0 3%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+.description {
+  text-align: center;
+  margin-top: -.5em;
+}
+
+.description li {
+  list-style: none;
+  display: inline;
+  margin: 0 4%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+.menu-items {
+  width: 90%;
+  display: block;
+  margin: 2% auto;
+}
+
+.left {
+  width: 45%;
+  float: left;
+  margin-left: 5%;
+}
+
+.right {
+  width: 45%;
+  float: right;
+  margin-right: 5%;
+}
+
+.noncoffee h3 {
+  margin-top: 20em;
+}
+
+.blank {
+  width: 100%;
+  height: 8em;
+}
+
+.menu-nav {
+  width: 100%;
+}
+
+.menu-nav li {
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.menu-nav li a {
+  text-decoration: none;
+  color: #000;
+  margin: 0 1em;
+  text-align: center;
+
+  font-family: 'Josefin Slab', serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: .75em
+}
+
+
+.tabs {
+    width:100%;
+    display:inline-block;
+}
+
+.tab-links {
+  text-align: center;
+  margin: -2em 0 4em 0;
+}
+
+.tab-links:after {
+    display: block;
+    clear: both;
+    content:'';
+}
+ 
+.tab-links li {
+  display: inline-block;
+    margin: 0 auto;
+    list-style: none;
+}
+ 
+.tab-links a {
+  font-family: 'Josefin Slab', serif;
+  font-weight: 300;
+    padding: .5em 1em;
+    display:inline-block;
+    color:#000;
+    transition:all linear 0.15s;
+    text-decoration: none;
+}
+ 
+.tab-links a:hover {
+  color: #BFBFBF;
+    text-decoration:none;
+}
+ 
+li.active a, li.active a:hover {
+    color: #E1771E;
+}
+ 
+.tab-content {
+    padding:15px;
+}
+ 
+.tab {
+    display:none;
+}
+ 
+.tab.active {
+    display:block;
+}
+
+
+
+
+/* === Parallax Sections === */
+
+.module.content {
+  padding: 40px 20px;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.module.parallax-1 {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.module.parallax-2 {
+  height: 75vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.module.parallax-3 {
+  height: 75vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.module.parallax-4 {
+  height: 75vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.module.parallax-1 {
+  background-image: url("../img/sushidark.jpg");
+  background-width: 100%;
+  background-height: 100%;
+  overflow: hidden;
+}
+
+.module.parallax-2 {
+  background-image: url("../img/mirugai1.jpg");
+  background-width: 100%;
+  background-height: 100%;
+  overflow: hidden;
+}
+
+.module.parallax-3 {
+  background-image: url("../img/sushi-bg.jpg");
+  background-width: 100%;
+  background-height: 100%;
+  overflow: hidden;
+}
+
+.module.parallax-4 {
+  background-image: url("../img/map.jpg");
+  background-width: 100%;
+  background-height: 100%;
+  overflow: hidden;
+}
+
+
+
+
+
+/*CLEARFIX*/
+.clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}.clearfix:after{clear:both;content:' ';display:block;font-size:0;line-height:0;visibility:hidden;width:0;height:0}* html .clearfix,*:first-child+html .clearfix{zoom:1}
