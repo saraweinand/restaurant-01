@@ -74,25 +74,63 @@ a {
 }
 
 a:hover {
-  color: #818181;
+  color: #fc6803;
+  font-weight: 400;
 }
 
 /* === Primary Navigation === */
 
-.topnav {
-  margin: 1em 3em 0 0;
-  width: 100%;
-  text-align: right;
-  position: fixed;
+.nav-container { 
+  width:100%; 
+  margin: 0 auto; 
 }
 
-.topnav a {
+
+.navleft {
   display: inline-block;
-  margin: 0 1em;
-  color: #fff;
+  float: left;
+}
+
+.navright {
+  display: inline-block;
+  float: right;
+}
+
+#stickynav-container { 
+  width:100%; 
+}
+
+#stickynav { 
+  width:100%; 
+  background: white; 
+}
+
+#stickynav ul { 
+  list-style:none; 
+  margin:0; 
+  padding:5px; 
+    margin:0 1em 0 1em; 
+}
+
+#stickynav ul li { 
+  margin:0; 
+  padding:0; 
+  display:inline; 
+}
+
+#stickynav ul li a { 
+  display:block; 
+  float:left; 
+  padding: .5em; 
+  color: black; 
   text-transform: uppercase;
   font-weight: 300;
 }
+
+#stickynav a:hover { 
+  color: #ef6406; 
+}
+
 
 
 /* ============= Sections ============= */
@@ -124,7 +162,7 @@ a:hover {
 
 .chef-container {
   width: 100%;
-  margin: 2% auto;
+  margin: -2% auto 2% auto;
 }
 .chef-container img {
   height: 30em;
@@ -159,7 +197,6 @@ a:hover {
 
 .signature img {
   width: 98%;
-  opacity: .8;
 }
 
 .signature img:hover {
@@ -190,30 +227,6 @@ a:hover {
   color: white;
   text-align: center;
   font-size: 3em;
-}
-
-.prices {
-  text-align: center;
-}
-.prices li{
-  list-style: none;
-  display: inline;
-  margin: 0 3%;
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-}
-
-.description {
-  text-align: center;
-  margin-top: -.5em;
-}
-
-.description li {
-  list-style: none;
-  display: inline;
-  margin: 0 4%;
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
 }
 
 .menu-items {
@@ -288,23 +301,19 @@ a:hover {
     list-style: none;
 }
  
-.tab-links a {
-  font-family: 'Josefin Slab', serif;
+.tab-links a { 
+  padding: .5em; 
+  color: black; 
+  text-transform: uppercase;
   font-weight: 300;
-    padding: .5em 1em;
-    display:inline-block;
-    color:#000;
-    transition:all linear 0.15s;
-    text-decoration: none;
 }
  
 .tab-links a:hover {
-  color: #BFBFBF;
-    text-decoration:none;
+  color: #ef6406; 
 }
  
 li.active a, li.active a:hover {
-    color: #E1771E;
+    color: #ef6406
 }
  
 .tab-content {
