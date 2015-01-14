@@ -11,7 +11,9 @@
   <!-- css -->
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/style.css">
-  <link href='http://fonts.googleapis.com/css?family=Halant:300|Lato:300,400,700' rel='stylesheet' type='text/css'>
+  <script src="//use.typekit.net/cfo8pdx.js"></script>
+<script>try{Typekit.load();}catch(e){}</script>
+  <link href='http://fonts.googleapis.com/css?family=Halant:300' rel='stylesheet' type='text/css'>
 
   <!-- js -->
   <script src="js/modernizr.js"></script>
@@ -25,16 +27,97 @@
   <div class="landing">
     <img src="img/tenjilogo-01.png">
     <h3>2345 W. MacDougal Ave. New York, NY 10004</h3>
-    <a href="XXXXXX">make your reservation</a>
-  </div>
+    <a href="#0" class="cd-popup-trigger" id="launch">Make A Reservation</a>
+
+    <div class="cd-popup" role="alert">
+      <div class="cd-popup-container">
+        <div class="reservation-container">
+          <div class="calendar-container">
+             <div class="calendar">
+                <div class="group">
+                  <p class="left minusmonth">&#9204;</p>
+                  <p class="monthname"></p>
+                  <p class="right addmonth">&#9205;</p>
+                </div>
+                <ul class="group weeks">
+                  <li>Mon</li>
+                  <li>Tue</li>
+                  <li>Wed</li>
+                  <li>Thurs</li>
+                  <li>Fri</li>
+                  <li>Sat</li>
+                  <li>Sun</li>
+                </ul>
+              </div><!-- calendar -->
+            </div>
+            <div class="party-time">
+              <form class="form">
+              <h4>Please call for reservations of more than 20 people.</h4>
+              <label for="reg-type">
+                <select id="reg-type">
+                  <option>Guests in Party</option>
+                  <option value="x">1</option>
+                  <option value="x">2</option>
+                  <option value="x">3</option>
+                  <option value="x">4</option>
+                  <option value="x">5</option>
+                  <option value="x">6</option>
+                  <option value="x">7</option>
+                  <option value="x">8</option>
+                  <option value="x">9</option>
+                  <option value="x">10</option>
+                  <option value="x">11</option>
+                  <option value="x">12</option>
+                  <option value="x">13</option>
+                  <option value="x">14</option>
+                  <option value="x">15</option>
+                  <option value="x">16</option>
+                  <option value="x">17</option>
+                  <option value="x">18</option>
+                  <option value="x">19</option>
+                  <option value="x">20</option>
+                </select>
+              </label>
+
+              <h4>Please allow about 1.5 hours for your visit.</h4>  
+              <label for="reg-city">
+                <select id="reg-city">
+                  <option>Reservation Time</option>
+                  <option value="x">3:00pm</option>
+                  <option value="x">3:30pm</option>
+                  <option value="x">4:00pm</option>
+                  <option value="x">4:30pm</option>
+                  <option value="x">5:00pm</option>
+                  <option value="x">5:30pm</option>
+                  <option value="x">6:30pm</option>
+                  <option value="x">7:00pm</option>
+                  <option value="x">7:30pm</option>
+                  <option value="x">8:00pm</option>
+                  <option value="x">8:30pm</option>
+                  <option value="x">9:00pm</option>
+                  <option value="x">10:00pm</option>
+                  <option value="x">10:30pm</option>
+                </select>
+              </label>
+              </form>
+            </div>
+          </div><!-- reservation-container -->
+<div class="clear"></div>
+          <a href="#0" class="cd-popup-close" id="close"></a>
+          <a href="#0" class="cd-popup-reserve" id="close">Reserve A Table</a>
+      </div> <!-- cd-popup-container -->
+    </div> <!-- cd-popup -->
+
+<div class="overlay"></div>
+    </div>
 </section>
 
   <div id="stickynav-container">
         <div id="stickynav">
             <div class="nav-container">
                 <ul class="navleft">
-                    <li><a href="XXXXX">Facebook</a></li>
-                    <li><a href="XXXXX">Twitter</a></li>
+                    <li><a href="XXXXX"><img src="img/twitter-facebook-01.png" alt=""></a></li>
+                    <li><a href="XXXXX"><img src="img/twitter-facebook-02.png" alt=""></a></li>
                 </ul>
                 <ul class="navright">
                     <li><a href="#home" class="selected">home</a></li>
@@ -45,8 +128,7 @@
             </div>
         </div>
     </div>
-<section class="module content chef">
-  <div id="about"></div>  
+<section class="module content" id="about">
   <div class="chef-container" id="startchange">
     <img src="img/sushichef.jpg" class="chefleft">
       <h2 class="chefright">About Tenji</h2>
@@ -69,38 +151,44 @@
   <div class="signature-container">
       <div class="signature">
         <img src="img/sushi-1.jpg" alt="">
+        <h5>$30</h5>
         <h5>Food Title</h5>
-        <h6>Description</h6>
+        <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dolore distinctio modi rem.</h6>
       </div>
 
       <div class="signature">
         <img src="img/sushi-2.jpg" alt="">
+        <h5>$30</h5>
         <h5>Food Title</h5>
-        <h6>Description</h6>
+        <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dolore distinctio modi rem.</h6>
       </div>
 
       <div class="signature">
         <img src="img/sushi-3.jpg" alt="">
+        <h5>$30</h5>
         <h5>Food Title</h5>
-        <h6>Description</h6>
+        <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dolore distinctio modi rem.</h6>
       </div>
 
       <div class="signature">
         <img src="img/sushi-4.jpg" alt="">
+        <h5>$30</h5>
         <h5>Food Title</h5>
-        <h6>Description</h6>
+        <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dolore distinctio modi rem.</h6>
       </div>
 
       <div class="signature">
         <img src="img/sushi-5.jpg" alt="">
+        <h5>$30</h5>  
         <h5>Food Title</h5>
-        <h6>Description</h6>
+        <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dolore distinctio modi rem.</h6>
       </div>
 
       <div class="signature">
         <img src="img/sushi-6.jpg" alt="">
+        <h5>$30</h5>       
         <h5>Food Title</h5>
-        <h6>Description</h6>
+        <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dolore distinctio modi rem.</h6>
       </div>
     </div>
   </div>
@@ -132,122 +220,83 @@
           <div class="menu-items">
             <div class="left">
               <h1>Beer</h1>
-              <h3>Kirin Ichiban</h3>
-              <p>Small $6 // Large $8</p>
+              <h3>Kirin Ichiban 6/8</h3>
 
-              <h3>Sapporo</h3>
-              <p>Small $6 // Large $8</p>
+              <h3>Sapporo 6/8</h3>
 
-              <h3>Asahi</h3>
-              <p>Small $6 // Large $8</p>
+              <h3>Asahi 6/8</h3>
 
-              <h3>Kirin Free</h3>
-              <p>Small $9 // Large $11</p>
+              <h3>Kirin Free 9/11</h3>
 
-              <h3>Red Hook</h3>
-              <p>Small $6 // Large $8</p>
+              <h3>Red Hook 6/8</h3>
 
               <h1>White Wine</h1>
-              <h3>Water Brook '14</h3>
-              <p>Chardonnay&#x2014; Glass $9 // Bottle $32</p>
+              <h3>Water Brook '14 (Chardonnay) 9/32</h3>
 
-              <h3>Mirth '13</h3>
-              <p>Chardonnay&#x2014; Glass $11 // Bottle $40</p>
+              <h3>Mirth '13 (Chardonnay) 11/40</h3>
 
-              <h3>Conqueror '12</h3>
-              <p>Chardonnay&#x2014; Glass $17 // Bottle $52</p>
+              <h3>Conqueror '12 (Chardonnay) 17/52</h3>
 
-              <h3>Pacific Rim '12</h3>
-              <p>Reisling&#x2014; Glass $11 // Bottle $39</p>
+              <h3>Pacific Rim '12 (Reisling) 11/39</h3>
 
-              <h3>Skyfall '14</h3>
-              <p>Pinot Gris&#x2014; Glass $9 // Bottle $32</p>
+              <h3>Skyfall '14 (Pinot Gris) 9/32</h3>
 
-              <h3>Archery Summir '13</h3>
-              <p>Pinot Gris&#x2014; Glass $15 // Bottle $45</p>
+              <h3>Archery Summir '13 (Pinot Gris) 15/45</h3>
 
-              <h3>Songbird '13</h3>
-              <p>Sauvignon Blanc&#x2014; Glass $9 // Bottle $32</p>
+              <h3>Songbird '13 (Sauvignon Blanc) 9/32</h3>
 
               <h1>Red Wine</h1>
-              <h3>Primarius '12</h3>
-              <p>Pinot Noir&#x2014; Glass $11 // Bottle $40</p>
+              <h3>Primarius '12 (Pinot Noir) 11/40</h3>
 
-              <h3>Purple Hand '12</h3>
-              <p>Pinot Noir&#x2014; Glass $20 // Bottle $62</p>
+              <h3>Purple Hand '12 (Pinot Noir) 20/62</h3>
 
-              <h3>Mercer Canyons '13</h3>
-              <p>Cabernet Sauvignon&#x2014; Glass $11 // Bottle $40</p>
+              <h3>Mercer Canyons '13 (Cabernet) 11/40</h3>
 
-              <h3>Gifford '12</h3>
-              <p>Cabernet Sauvignon&#x2014; Glass $20 // Bottle $62</p>
+              <h3>Gifford '12 (Cabernet) 20/62</h3>
 
-              <h3>Double Canyon '12</h3>
-              <p>Chardonnay&#x2014; Glass $30 // Bottle $82</p>
-
-              <h3>Choya Plum</h3>
-              <p>Chardonnay&#x2014; Glass $9 // Bottle $32</p>
+              <h3>Double Canyon '12 (Cabernet) 30/82</h3>
 
             </div>
             <div class="right">
               <h1>Sake</h1>
-              <h3>Hatsumago</h3>
-              <p>Junmai Ginjo, from Yamagata&#x2014; Small $12 // Large $24</p>
+              <h3>Hatsumago (Junmai Ginjo&#x2014; Yamagata) 12/24</h3>
 
-              <h3>Otokoyama</h3>
-              <p>Junmai, from Hokkaido&#x2014; Small $14 // Large $24</p>
+              <h3>Otokoyama (Junmai&#x2014; Hokkaido) 14/24</h3>
 
-              <h3>Onikoroshi</h3>
-              <p>Junmai Ginjo, from Shizuoka&#x2014; Small $21 // Large $38</p>
+              <h3>Onikoroshi (Junmai Ginjo&#x2014; Shizuoka) 21/38</h3>
 
-              <h3>Jozen</h3>
-              <p>Junmai Ginjo, from Niigata&#x2014; Large $49</p>
+              <h3>Jozen (Junmai Ginjo&#x2014; Niigata) 49</h3>
 
-              <h3>Harushika</h3>
-              <p>Junmai, from Nara&#x2014; Large $58</p>
+              <h3>Harushika (Junmai&#x2014; Nara) 58</h3>
 
-              <h3>Mu</h3>
-              <p>Daiginjo, from Hyogo&#x2014; Large $65</p>
+              <h3>Mu (Daiginjo&#x2014; Hyogo) 65</h3>
 
-              <h3>Dassai</h3>
-              <p>Junmai Daiginjo, from Yamagata&#x2014; Large $82</p>
+              <h3>Dassai (Junmai Daiginjo&#x2014; Yamagata) 82</h3>
 
-              <h3>Hakkaisan</h3>
-              <p>Genshu, from Niigata&#x2014; Large $69</p>
+              <h3>Hakkaisan (Genshu&#x2014; Niigata) 69</h3>
 
-              <h3>Kubota</h3>
-              <p>Junmai Daiginjo, from Niigata&#x2014; Large $155</p>
+              <h3>Kubota (Junmai Daiginjo&#x2014; Niigata) 155</h3>
 
-              <h3>Tsukuba</h3>
-              <p>Daiginjo, from Ibaragi&#x2014; Large $200</p>
+              <h3>Tsukuba (Daiginjo&#x2014; Ibaragi) 200</h3>
 
-              <h3>Arabashiri</h3>
-              <p>Junmai Ginjo, from Yabuta&#x2014; Large $210</p>
+              <h3>Arabashiri (Junmai Ginjo&#x2014; Yabuta) 200</h3>
 
-              <h3>Jozo</h3>
-              <p>Junmai Ginjo, from Niigata&#x2014; Large $210</p>
+              <h3>Jozo (Junmai Ginjo&#x2014; Niigata) 210</h3>
 
-              <h3>Hot Sake</h3>
-              <p>Gekkeikan&#x2014; Small $8 // Large $14</p>
+              <h3>Hot Sake (Gekkeikan) 8/14</h3>
 
-              <h3>Nigori</h3>
-              <p>Yaegaki&#x2014; Small $8 // Large $16</p>
+              <h3>Nigori (Yaegaki) 8/16</h3>
 
               <h1>Non-Alcoholic</h1>
-              <h3>Soda</h3>
-              <p>Pepsi, Diet Pepsi, Dr. Pepper, Sierra Mist, Mt. Dew</p>
+              <h3>Soda (Pepsi, Diet Pepsi, Sierra Mist) 2/4</h3>
 
-              <h3>Tea</h3>
-              <p>Green Tea, Black Tea, Chai Tea, Cucumber Tea, Earl Grey Tea</p>
+              <h3>Tea (Green, Black, Cucumber, Earl Grey) 3</h3>
 
-              <h3>Juice</h3>
-              <p>Orange, Apple, White Grape, Cranberry</p>
+              <h3>Juice (Orange, Apple, Cranberry) 4/6</h3>
 
-              <h3>Bottled Water</h3>
-              <p>Fuji, Pelligrino</p>
+              <h3>Bottled Water (Fuji, Pelligrino) 3</h3>
 
-              <h3>Coffee</h3>
-              <p>Regular, Decaf</p>
+              <h3>Coffee (Regular, Decaf) 3</h3>
             </div>
           </div>
         </div>
@@ -506,6 +555,7 @@
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="js/stickynav.js"></script>
 <script src="js/scripts.js" type="text/javascript"></script>
+<script src="js/popup.js" type="text/javascript"></script>
 
 
 </body>
