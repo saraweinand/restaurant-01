@@ -1,13 +1,13 @@
 jQuery(document).ready(function($){
 	//open popup
-	$('.cd-popup-trigger').on('click', function(event){
+	$('.popup-trigger').on('click', function(event){
 		event.preventDefault();
-		$('.cd-popup').addClass('is-visible');
+		$('.popup').addClass('is-visible');
 	});
 	
 	//close popup
-	$('.cd-popup').on('click', function(event){
-		if( $(event.target).is('.cd-popup-close, .cd-popup-reserve') || $(event.target).is('.cd-popup') ) {
+	$('.popup').on('click', function(event){
+		if( $(event.target).is('.popup-close, .popup-reserve') || $(event.target).is('.popup') ) {
 			event.preventDefault();
 			$(this).removeClass('is-visible');
 		}
@@ -15,7 +15,7 @@ jQuery(document).ready(function($){
 	//close popup when clicking the esc keyboard button
 	$(document).keyup(function(event){
     	if(event.which=='27'){
-    		$('.cd-popup').removeClass('is-visible');
+    		$('.popup').removeClass('is-visible');
 	    }
     });
 });
@@ -25,8 +25,13 @@ $("#launch").click(function() {
 
 });
 
-$("#close, .cd-popup-reserve").click(function() {
+$("#close, .popup-reserve, .overlay").click(function() {
   $('.overlay').fadeOut();
+});
+
+$(".overlay").click(function() {
+  $('.overlay').fadeOut();
+  $('.popup').removeClass('is-visible');
 });
 
 
@@ -50,7 +55,7 @@ $('.addmonth').click(function(){
 
 function renderCal(themonth){
 $('.calendar li').remove();
-$('.calendar ul').append('<li>Mon</li><li>Tue</li><li>Wed</li><li>Thurs</li><li>Fri</li><li>Sat</li> <li>Sun</li>');
+$('.calendar ul').append('<li>M</li><li>T</li><li>W</li><li>T</li><li>F</li><li>S</li><li>S</li>');
 var d = new Date(),
   currentMonth = d.getMonth()+themonth, // get this month
   days = numDays(currentMonth,d.getYear()), // get number of days in the month
