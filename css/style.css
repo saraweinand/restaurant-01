@@ -833,7 +833,73 @@ footer {
 
 @media screen and (max-width: 480px) {
 
+.module.parallax-2 {
+  height: 0em;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
+.module.parallax-3 {
+  height: 0em;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.module.parallax-4 {
+  height: 0em;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.module.parallax-1 {
+  background: #fc9003;
+  background-width: 100%;
+  background-height: 100%;
+  overflow: hidden;
+}
+
+.module.parallax-2 {
+  background-image: url("../img/parallax-2.jpg");
+  background-width: 100%;
+  background-height: 100%;
+  overflow: hidden;
+}
+
+.module.parallax-3 {
+  background-image: url("../img/parallax-3.jpg");
+  background-width: 100%;
+  background-height: 100%;
+  overflow: hidden;
+}
+
+.module.parallax-4 {
+  background-image: url("../img/parallax-4.png");
+  background-width: 100%;
+  background-height: 100%;
+  overflow: hidden;
+}
+
+.landing {
+  margin-top: 2em;
+}
+
+.landing img {
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+}
 
   .popup-container {
     top: 10%;
@@ -847,17 +913,20 @@ footer {
   }
 
   .chefleft {
-  width: 98%;
+  width: 92%;
   display: block;
   margin: 0 auto;
 }
 
   .chefright {
-    width: 90%;
-    display: block;
-    margin: 0 auto;
+    width: 100%;
+    display: inline-block;
   }
-  
+
+  p.chefright  {
+    margin: 1em 2em 0 1em;
+  }
+
 
   .signature {
     display: inline-block;
