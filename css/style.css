@@ -789,6 +789,11 @@ footer {
 
 @media screen and (max-width: 768px) {
 
+.module.content {
+  padding: 0;
+  width: 100%;
+  margin: 0 auto;
+}
 
   .popup-container {
     top: 10%;
@@ -797,23 +802,47 @@ footer {
   }
 
   .chefleft {
-  width: 80%;
+  width: 100%;
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 1em auto;
 }
 
   .chefright {
     width: 90%;
-    display: block;
-    margin: 0 auto;
+    margin-left: 5%;
   }
-  
+
+  .chefright {
+    width: 90%;
+    float: left;
+    display: block;
+  }
+
+  h2.chefright {
+    margin-top: 1em;
+  }
+
+  p.chefright {
+    margin-top: 1em ;
+    margin-bottom: 5% ;
+  }
+
+  .signature-container {
+    width: 90%;
+    display: block;
+    margin: 5% auto 0 auto;
+  }
 
   .signature {
     display: inline-block;
     margin: 0 auto;
     width: 48%;
     text-align: left;
+  }
+
+  .contact-container {
+    display: block;
+    margin: 5% auto 0 auto;
   }
 
   .contact, .hours {
@@ -824,7 +853,8 @@ footer {
   }
 
    .map {
-    width: 90%;
+    width: 50%;
+    margin-right: 5%;
    }
 
 
@@ -833,66 +863,17 @@ footer {
 
 @media screen and (max-width: 480px) {
 
-.module.parallax-2 {
-  height: 0em;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+
+.module.content {
+  padding: 0;
+  width: 100%;
+  margin: 0 auto;
 }
 
-.module.parallax-3 {
-  height: 0em;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
 
-.module.parallax-4 {
-  height: 0em;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-.module.parallax-1 {
-  background: #fc9003;
-  background-width: 100%;
-  background-height: 100%;
-  overflow: hidden;
-}
-
-.module.parallax-2 {
-  background-image: url("../img/parallax-2.jpg");
-  background-width: 100%;
-  background-height: 100%;
-  overflow: hidden;
-}
-
-.module.parallax-3 {
-  background-image: url("../img/parallax-3.jpg");
-  background-width: 100%;
-  background-height: 100%;
-  overflow: hidden;
-}
-
-.module.parallax-4 {
-  background-image: url("../img/parallax-4.png");
-  background-width: 100%;
-  background-height: 100%;
-  overflow: hidden;
-}
 
 .landing {
-  margin-top: 2em;
+  margin-top: 3em;
 }
 
 .landing img {
@@ -913,23 +894,35 @@ footer {
   }
 
   .chefleft {
-  width: 92%;
-  display: block;
+  width: 100%;
+  margin-left: 0;
+  position: relative;
+  display: inline-block;
   margin: 0 auto;
 }
 
   .chefright {
-    width: 100%;
+    width: 85%;
+    float: left;
     display: inline-block;
+    margin-left: 2em;
   }
 
-  p.chefright  {
-    margin: 1em 2em 0 1em;
+  h2.chefright {
+    margin-top: 1em;
   }
 
+  p.chefright {
+    margin-top: 1em ;
+    margin-bottom: 1em ;
+  }
+
+.signature-container {
+  margin-top: 3em;
+}
 
   .signature {
-    display: inline-block;
+    display: block;
     margin: 0 auto;
     width: 80%;
     text-align: left;
@@ -958,6 +951,18 @@ footer {
     width: 90%;
     float: left;
     margin: 2% 2%;
+  }
+
+  .tab-content {
+    margin-left: 5%;
+  }
+
+  .contact-container {
+    margin-top: 3em;
+  }
+
+  iframe {
+    display: none;
   }
 
 
