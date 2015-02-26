@@ -466,6 +466,7 @@ ul {
 .signature-container {
   display: block;
   width: 100%;
+  max-width: 800px;
   margin: 3% auto -1% auto;
 }
 
@@ -488,6 +489,7 @@ ul {
 .signature h5:nth-child(2) {
   float: right;
 }
+
 
 .signature img {
   width: 98%;
