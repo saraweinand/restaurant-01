@@ -464,6 +464,7 @@ ul {
 /* === Signature Dishes === */
 
 .signature-container {
+  display: block;
   width: 100%;
   margin: 3% auto -1% auto;
 }
