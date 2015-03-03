@@ -106,11 +106,11 @@ a:hover {
 .navleft {
   display: inline-block;
   float: left;
-  margin-top: -.25em;
 }
 
 .navleft img {
-  height: 2em;
+  height: 1.9em;
+  margin-top: -.5em;
 }
 
 .navright {
@@ -161,7 +161,7 @@ a:hover {
 .landing {
   text-align: center;
   color: white;
-  margin-top: 10em;
+  margin-top: 7em;
 }
 
 .landing img {
@@ -717,7 +717,7 @@ footer {
 }
 
 .module.parallax-1 {
-  height: 100vh;
+  height: 93.5vh;
   background-repeat: no-repeat;
   background-attachment: fixed;
   -webkit-background-size: cover;
@@ -788,6 +788,16 @@ footer {
 /* ======== Media Queries =========*/
 
 @media screen and (max-width: 768px) {
+
+.landing {
+  margin-top: 3em;
+}
+
+.landing img {
+  width: 30%;
+  height: auto;
+  margin: 0 auto;
+}
 
 .module.content {
   padding: 0;
@@ -869,8 +879,6 @@ footer {
   width: 100%;
   margin: 0 auto;
 }
-
-
 
 .landing {
   margin-top: 3em;
@@ -964,6 +972,18 @@ footer {
   iframe {
     display: none;
   }
+
+  .module.parallax-1 {
+  background-image: url("../img/sushidark.jpg");
+  background-width: 100%;
+  overflow: hidden;
+}
+
+.module.parallax-1 {
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 
 
   
