@@ -655,6 +655,23 @@ li.active a, li.active a:hover {
 }
 
 .pricing {
+  display: block;
+  width: 100%;
+  float: left;
+}
+
+.pricing h5 {
+  display: block;
+  width: 100%;
+  float: left;
+}
+
+.pricing h3:first-of-type {
+  display: inline-block;
+  float: left;
+}
+
+.pricing h3:last-of-type {
   display: inline-block;
   float: right;
 }
